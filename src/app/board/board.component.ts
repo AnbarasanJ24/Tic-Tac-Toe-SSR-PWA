@@ -9,11 +9,12 @@ import { Component, OnInit } from '@angular/core';
 
 export class BoardComponent implements OnInit {
 
-  squares: string[] = [];
+  squares: any[] = [];
   xIsNext: boolean = false;
   winner: string | null = '';
 
   constructor() { }
+
 
   ngOnInit() {
     this.newGame();
