@@ -1,10 +1,17 @@
 main {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 0px;
+    width: 30vw;
+    height: 60vh;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.title-container {
+    display: grid;
+    place-content: center;
 }
 
-app-square {
-    border: 1px gray solid;
-    height: 200px;
+.title {
+    font-size: 2rem;
+    position: relative;
 }
